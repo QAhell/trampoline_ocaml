@@ -1,0 +1,3 @@
+(test
+ (name trampoline)
+ (libraries trampoline))
