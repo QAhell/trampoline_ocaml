@@ -1,3 +1,6 @@
+(** This module implements a trampoline for deeply recursive functions,
+ most useful for the bytecode interpreter and JavaScript targets. *)
+
 (** The type of a trampoline that doesn't use the stack for recursive computation. *)
 module type Trampoline =
 sig
@@ -25,4 +28,10 @@ sig
   val map : ('a -> 'b) -> 'a t -> 'b t
 end
 
+(** This is a real trampoline implementation. *)
 module Trampoline : Trampoline
+
+(** If you don't want to use trampolines because you're sure that your stack
+ is large enough but you have a module that depends on the Trampoline module then
+ you can use Not_a_trampoline to use the stack instead of trampolines. *)
+module Not_a_trampoline : Trampoline

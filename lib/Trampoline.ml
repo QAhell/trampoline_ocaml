@@ -46,3 +46,14 @@ struct
   let map f x = bind x (fun x -> return (f x))
 
 end
+
+module Not_a_trampoline =
+struct
+type 'a t = 'a
+let execute x = x
+let return x = x
+let suspend f = f ()
+let recursive_call f x = f x
+let bind x f = f x
+let map f x = f x
+end
