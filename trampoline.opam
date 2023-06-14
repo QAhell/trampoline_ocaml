@@ -3,8 +3,8 @@ opam-version: "2.0"
 version: "0.1.0"
 synopsis: "A trampoline implementation"
 description: "A trampoline implementationtion"
-maintainer: ["Armin Heller"]
-authors: ["Armin Heller"]
+maintainer: ["Armin Heller <support@arminheller.de>"]
+authors: ["Armin Heller <support@arminheller.de>"]
 license: "Apache-2.0"
 tags: ["topics" "trampoline"]
 homepage: "https://github.com/QAhell/trampoline_ocaml"

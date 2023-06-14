@@ -7,9 +7,9 @@
 (source
  (github QAhell/trampoline_ocaml))
 
-(authors "Armin Heller")
+(authors "Armin Heller <support@arminheller.de>")
 
-(maintainers "Armin Heller")
+(maintainers "Armin Heller <support@arminheller.de>")
 
 (license "Apache-2.0")
 
