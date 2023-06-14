@@ -13,8 +13,6 @@
 
 (license "Apache-2.0")
 
-(documentation https://github.com/QAhell/trampoline_ocaml)
-
 (package
  (name trampoline)
  (synopsis "A trampoline implementation")
