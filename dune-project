@@ -15,6 +15,7 @@
 
 (package
  (name trampoline)
+ (version 0.1.0)
  (synopsis "A trampoline implementation")
  (description "A trampoline implementationtion")
  (depends ocaml dune)
