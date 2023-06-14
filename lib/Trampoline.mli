@@ -32,6 +32,6 @@ end
 module Trampoline : Trampoline
 
 (** If you don't want to use trampolines because you're sure that your stack
- is large enough but you have a module that depends on the Trampoline module then
+ is large enough but you have a functor that depends on the Trampoline module then
  you can use Not_a_trampoline to use the stack instead of trampolines. *)
 module Not_a_trampoline : Trampoline
