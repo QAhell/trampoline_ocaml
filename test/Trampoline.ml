@@ -3,7 +3,7 @@ open Trampoline
 
 let up_to m n =
   let rec up m n acc =
-    if m > n then []
+    if m > n then acc
     else up m (n - 1) (n :: acc) in
   up m n []
 
