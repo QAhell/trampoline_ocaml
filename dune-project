@@ -16,8 +16,8 @@
 (package
  (name trampoline)
  (version 0.1.0)
- (synopsis "A trampoline implementation")
- (description "A trampoline implementationtion")
+ (synopsis "A trampoline library enabling deep recursions that don't fit into stack memory")
+ (description "Using this library you can perform deep recursion that is not limitied by the stack but only by the size of the available random access memory (RAM). In OCaml the number of nested recursive calls that are not tail-calls is limited by the stack. The stack usually consists of a fraction of the RAM available to the OCaml program. The difference between stack and RAM can be important for compilation targets where the default stack size is rather small, e. g. OCaml bytecode or JavaScript. The trampoline library provides a trampoline monad and a few convenience functions.")
  (depends ocaml dune)
  (tags (topics trampoline)))
 
